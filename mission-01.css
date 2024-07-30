@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+html,
+body {
+    height: 100%;
+ 
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #371E34;
+}
+
+li,
+a,
+button {
+    font-family: messina-sans, "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    text-decoration: none;
+    color: #C882D2;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #371E34;
+    height: 85px;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: rgb(114, 10, 150);
+}
+
+button {
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: rgb(114, 10, 175);
+    transition-property: all 1s;
+    
+ 
+}
+
+button:hover {
+   background-color: rgb(114, 10, 150);
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 25%;
+    padding: 10px;
+    margin-right: 10px;
+    border: solid;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.grid-item {
+    position: relative;
+    background-color: none;
+    padding: 0;
+    text-align: center;
+    border: 0 solid transparent;
+    transition: border .3s ease-in;
+    
+}
+
+.grid-item:hover {
+    border:solid 5px #C882D2;
+    cursor: pointer;
+    
+}
+
+#side-menu {
+    background-color: #371E34;
+    color: #C882D2;
+    border: none;
+    font-family: sans-serif
+
+}
+
+#side-menu, p {
+    background-color: #371E34;
+    font-size: larger;
+}
+
+.grid-photo {
+    padding: 0;
+    margin: 0;
+   
+}
+
+.deinst {
+    height: 100%;
+    width: 100%;
+    background-image: url("images/deinst.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.kasse {
+    height: 100%;
+    width: 100%;
+    background-image: url("images/kasse.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+
+}
+
+.food {
+    height: 100%;
+    width: 100%;
+    background-image: url("images/avo-toast.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.springer {
+    height: 100%;
+    width: 100%;
+    background-image: url("images/barista.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;    
+}
+
+.drinks {
+    height: 100%;
+    width: 100%;
+    background-image: url("images/drinks.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: bottom;
+}
+
+.professionalism {
+    height: 100%;
+    width: 100%;
+    background-image: url("images/ProfessionalCircles.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: bottom;
+}
+
+
+
+.overlay-text {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 60px;
+    font-weight: bold;
+    transition: all .5s ease-in-out;
+    
+    
+}
+
+.grid-item:hover .overlay-text {
+    color: #C882D2;
+    
+
+    
+
+}
+
+
